@@ -1,0 +1,115 @@
+// nav and intro
+
+.main-head {
+  width: 95%;
+  margin: 0 0 0 5%;
+}
+nav {
+  width: 60%;
+  min-height: 10vh;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  flex: 2 1 10rem;
+  a {
+    font-size: 2.8rem;
+  }
+}
+.nav-links {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.active {
+  padding: 0.5rem 2rem;
+  background: $gray-text;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+.intro-section {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.intro-text {
+  flex: 1 1 40rem;
+  h2 {
+    padding-top: 4rem;
+    font-size: 8rem;
+    display: inline-block;
+    background: $gradient;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h3 {
+    font-size: 6rem;
+    padding: 2rem 0;
+  }
+  p {
+    color: $gray-text;
+  }
+}
+.intro-social-links {
+  margin: 4rem 0;
+  a {
+    margin-right: 4rem;
+  }
+}
+.intro-images {
+  flex: 1 1 40rem;
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.splash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+}
+
+#clock-arrow {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: clockanima 1s linear infinite;
+}
+#me {
+  transform-origin: bottom;
+  animation: boyanima 1s ease infinite alternate;
+}
+@keyframes clockanima {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes boyanima {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+.burger {
+  display: none;
+}

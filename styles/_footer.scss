@@ -1,0 +1,21 @@
+footer {
+  min-height: 10vh;
+  padding: 0 5%;
+  color: #ffffff;
+  background: $background-color;
+  text-align: center;
+  h4 {
+    padding-top: 2rem;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 2rem;
+    }
+  }
+}
+.heart {
+  color: #fc3f3f;
+}
