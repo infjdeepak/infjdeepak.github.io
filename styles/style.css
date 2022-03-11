@@ -461,7 +461,7 @@ footer ul li {
   .burger .line {
     border-radius: 2rem;
     background: #2c2c2c;
-    padding: 0.4rem 3rem;
+    padding: 0.2rem 2rem;
     margin: 0.2rem 0;
     -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
@@ -469,15 +469,19 @@ footer ul li {
   .burger .line2 {
     visibility: hidden;
   }
+  .toggle {
+    position: fixed;
+    right: 5%;
+  }
   .toggle .line1 {
     background: #ffffff;
-    -webkit-transform: rotateZ(217deg) translateY(-246%);
-            transform: rotateZ(217deg) translateY(-246%);
+    -webkit-transform: rotateZ(223deg) translateY(-285%);
+            transform: rotateZ(223deg) translateY(-285%);
   }
   .toggle .line3 {
     background: #ffffff;
-    -webkit-transform: rotateZ(311deg) translateY(-199%);
-            transform: rotateZ(311deg) translateY(-199%);
+    -webkit-transform: rotateZ(315deg) translateY(-283%);
+            transform: rotateZ(315deg) translateY(-283%);
   }
   .intro-section {
     -webkit-box-orient: vertical;
